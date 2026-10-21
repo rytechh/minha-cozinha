@@ -1,0 +1,102 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Me especializando ainda mais em HTML e CSS</title>
+    <!-- Logo abaixo temos um favicon-->
+    <link
+      rel="icon"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAYFBMVEX///+63c6gz7um0sCr1cSv18aYzLYmonRjtpTB4NP4/Pvu9/PT6eA3pnyFxKoAkFcAlV8AklpruZoAlV4AmmgAmGTi8evl8+4AiUmLx69Yso612ssupHgLnWxBqYHK5dqH3wIXAAAAq0lEQVR4AdzLgwEDQRRF0bu27f67zJuYDeQMv/gDlu24/OL5QYiI63luBMSup1+CpBlXeVGWhXK+3rKqkazxuCrbtquJm9aoemQYubJVLZJJt3QzTOlScXPOtbJ2Gk1xtiDlxm1UVa0h0Gfn1dYapY9VafTghXLSAauelVeBGXSAw4xavDC5DWPv2sblhXLVgpFWbcCbtLil5iLi3X4aTEhMFjMmxJFYQxIAAFFuC1yESb31AAAAAElFTkSuQmCC"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="barra-navegacao">
+      <a href="#" class="navegacao-logo">
+        <i class="fa-solid fa-utensils"></i> Minha cozinha
+      </div>
+      <ul class="navegacao-link">
+        <li><a href="a">Receitas</a></li>
+        <li><a href="a">Contato</a></li>
+      </ul>
+      <button class="btn-primary">Login</button>
+    </nav>
+
+    <header class="cabecalho">
+      <h1>Receita de bolo</h1>
+      <p>Aprenda a fazer um bolo com HTML</p>
+    </header>
+
+    <main>
+      <article>
+        <section class="primeira-sessao">
+          <p>Sobre a Receita</p>
+          <p>Ingredientes</p>
+          <p>Modo de Preparo</p>
+        </section>
+        <section class="container-conteudo-receita">
+          <section class="ingredientes">
+            <h2>Ingredientes</h2>
+            <ul>
+              <li>3 Ovos</li>
+              <li>2 xícaras de Farinha de Trigo</li>
+              <li>1 xícara de Açúcar</li>
+              <li>1/2 xícara de Manteiga (ou óleo)</li>
+              <li>1 xícara de Leite</li>
+              <li>1 colher (sopa) de Fermento em pó</li>
+            </ul>
+          </section>
+
+          <section class="preparo">
+            <h2>Modo de Preparo</h2>
+            <ol>
+              <li>Unte uma forma com manteiga e enfarinhe.</li>
+              <li>No liquidificador ou batedeira, bata os ovos, a manteiga e o açúcar até obter um creme homogêneo.</li>
+              <li>Adicione o leite e a farinha de trigo aos poucos, misturando delicadamente.</li>
+              <li>Adicione o fermento em pó por último e misture suavemente.</li>
+              <li>Despeje a massa na forma untada e leve ao forno pré-aquecido a 180°C por cerca de 35 a 40 minutos.</li>
+            </ol>
+          </section>
+        </section>
+
+        <section class="sessao-link">
+          <span>Para mais receitas elaboradas,</span>
+          <a class="link-estilizado" href="#"
+            >veja também a receita de bolo de fubá</a
+          >
+          <br />
+          <span>e se deguste com nossas receitas premium</span>
+        </section>
+      </article>
+
+      <section class="formulario-sessao">
+        <h2>Deixe seu comentário:</h2>
+        <form class="formulario" action="/api/comentarios" method="post">
+          <div class="form-grupo">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" required />
+          </div>
+          <div class="form-grupo">
+            <label for="seu-comentario">Seu comentário</label>
+            <textarea rows="4" required></textarea>
+          </div>
+          <div class="form-grupo">
+            <button class="btn-primary" type="submit">
+              Enviar comentário
+              <i class="fa-solid fa-paper-plane submit-icon"></i>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

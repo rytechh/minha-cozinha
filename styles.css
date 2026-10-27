@@ -20,13 +20,12 @@
 
 html {
   font-size: 16px;
-  height: 100vh;
 }
 
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Lexend", "Arial", sans-serif;
   background-color: var(--cor-primaria, #f7f7f7f2);
 }
@@ -79,8 +78,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 300px;
-  height: 50%;
+  min-height: 50vh;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.74);
   margin-bottom: var(--espacamento-pequeno);
 }
